@@ -1,3 +1,6 @@
+#! /usr/bin/env python y
+"""cette ligne permet de rendre le script exécutable directement depuis la ligne de commande sans avoir à spécifier l'interpréteur Python à utiliser, et elle utilise l'interpréteur Python trouvé dans le chemin d'accès, facilitant ainsi la portabilité du script sur différents systèmes.
+"""
 import random
 
 # Roll function
@@ -49,3 +52,4 @@ while max(players_score) < max_score:
     max_score = max(players_score)
     winning_index = players_score.index(max_score)
     print("The winning player is Player", winning_index + 1, "with a score of:", max_score)
+
